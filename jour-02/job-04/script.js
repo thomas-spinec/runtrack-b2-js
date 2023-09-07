@@ -18,7 +18,6 @@ async function myRegisterStudent(form) {
         body: formData
     });
     let result = await response.text();
-    console.log(result);
     if (result === 'Student registered successfully') {
         alert('Student registered successfully');
     } else if (result === "Error while registering student") {
