@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <title>Jour03 JS</title>
     <script defer type="module" src="script.js"></script>
+    <style>
+        button {
+            background: antiquewhite;
+            border: 1px solid black;
+        }
+
+        #play {
+            width: 10vw;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #board {
+            width: 45vw;
+            height: 45vw;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 0.5vw;
+        }
+        .case {
+            width: 10vw;
+            height: 10vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
 </head>
 <body>
     <p id="current-player"></p>

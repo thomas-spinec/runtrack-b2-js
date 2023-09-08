@@ -38,6 +38,7 @@ export default class Board {
         if (this.grid[row][col] === "-") {
             this.grid[row][col] = symbol;
             this.displayBoard();
+            return true
         }
         else {
             return false;
@@ -45,7 +46,7 @@ export default class Board {
     }
 
     // vérifier si un joueur a gagné
-    checkWinner() {
+    checkVictory() {
         // vérifier les lignes
         for (let i = 0; i < this.grid.length; i++) {
             if (this.grid[i][0] !== "-" && this.grid[i][0] === this.grid[i][1] && this.grid[i][0] === this.grid[i][2]) {
